@@ -1,5 +1,6 @@
 @echo off
 @REM This script deletes some temporary files and registry entries in order to reset Intellij's trial counter.
+@REM Change the PRODUCT variable to reflect the version of Intellij that you're currently using.
 @REM For educational purposes only, please support JetBrains and purchase a subscription.
 
 @REM Author: https://github.com/ckaridis
