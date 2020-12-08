@@ -1,0 +1,1 @@
+powershell -c start -verb runas notepad.exe %WINDIR%\System32\drivers\etc\hosts
