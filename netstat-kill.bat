@@ -1,4 +1,11 @@
 @echo off
+@REM This script gives you the ability to search for any text in the NetStat command (ex. a specific port).
+@REM It also gives you the ability in the next step to kill a specific process.
+@REM Useful when you need to find and kill a process that uses a specific port in your system.
+@REM Should run as Administrator.
+
+@REM Author: https://github.com/ckaridis
+
 :netStat
 set text=
 echo === NetStat ===
