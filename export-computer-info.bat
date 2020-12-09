@@ -6,8 +6,6 @@
 
 set fileName="computer-info.txt"
 
-call :echoTitle "WINDOWS PRODUCT KEY"
-wmic path softwarelicensingservice get OA3xOriginalProductKey >> %fileName%
 call :echoTitle "COMPUTER BASIC INFORMATION"
 systeminfo >> %fileName%
 call :echoTitle "LIST OF INSTALLED DRIVERS"
