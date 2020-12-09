@@ -26,12 +26,12 @@ goto netStat
 
 :taskKill
 echo === TaskKill ===
-set text=
-set /p text=Enter the PID of the task to kill (leave blank to go back or "x" to exit): 
-if '%text%'=='' goto netStat
-if '%text%'=='x' goto end
-taskkill /F /PID "%text%"
+set taskId=
+set /p taskId=Enter the PID of the task to kill (leave blank to go back or "x" to exit): 
+if '%taskId%'=='x' goto endOfFile
+if '%taskId%'=='' goto netStat
+taskkill /F /PID "%taskId%"
 goto taskKill
 
-:end
+:endOfFile
 exit /B
